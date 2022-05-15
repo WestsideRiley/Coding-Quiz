@@ -11,12 +11,28 @@
   </head>
   <body>
     <div class="container">
+
         <section class="row">
           <h2 class="col align-items-left">View High Scores</h2>
-          <h2 class="col text-end" id="countdown">adsf</h2>
+          <h2 class="col text-end" id="countdown">Timer: 120</h2>
         </section>
+
         <h1 class="welcome">Coding Quiz Challenge</h1>
-      <p id="main"></p>
+    </div>
+    <div class="question-container d-flex justify-content-center" id="question">
+          Question goes here
+    </div>
+    <div class="option-container d-flex justify-content-center flex-column align-items-center p-3 none" id="options">
+          <button class="option row p-2 m-2" id="op1" >option1</button>
+    
+          <button class="option row p-2 m-2" id="op2" >option2</button>
+    
+          <button class="option row p-2 m-2" id="op3">option3</button>
+    
+          <button class="option row p-2 m-2" id="op4">option4</button>
+    </div>
+    <div class="navigation d-flex justify-content-center flex-row align-items-center">
+          <button class="next p-2 m-2 bg-dark bg-gradient text-white" id="StartQuiz" onclick="countdown(), StartQuiz(), ShowQuestions()">Start Quiz</button>
     </div>
     <script src="./assets/js/script.js"></script>
   </body>
