@@ -10,6 +10,7 @@
 
   </head>
   <body>
+
     <div class="container">
 
         <section class="row">
@@ -19,13 +20,17 @@
 
         <h1 class="welcome">Coding Quiz Challenge</h1>
     </div>
+
     <div class="question-container d-flex justify-content-center text-center text-danger font-weight-bold" id="question">
         <p> 
           Try to answer the following questions about coding within the given time limit.  Your answers will be recorded and you will be given a score at the end. <br>
           Good Luck!
         </p>
     </div>
-    <div class="option-container d-none justify-content-center flex-column align-items-center p-3" id="options">
+
+    <div class="option-container d-flex justify-content-center flex-column align-items-center p-3" id="options">
+
+        <div class="option-container d-none justify-content-center flex-column align-items-center p-3" id="options1">
           <button class="option row p-2 m-2" id="op1" >option1</button>
     
           <button class="option row p-2 m-2" id="op2" >option2</button>
@@ -33,17 +38,68 @@
           <button class="option row p-2 m-2" id="op3">option3</button>
     
           <button class="option row p-2 m-2" id="op4">option4</button>
+        </div>
+        
+        <div class="option-container d-none justify-content-center flex-column align-items-center p-3" id="options2">
+          <button class="option row p-2 m-2" id="op5" >option1</button>
+    
+          <button class="option row p-2 m-2" id="op6" >option2</button>
+    
+          <button class="option row p-2 m-2" id="op7">option3</button>
+    
+          <button class="option row p-2 m-2" id="op8">option4</button>
+        </div>
+
+        <div class="option-container d-none justify-content-center flex-column align-items-center p-3" id="options3">
+          <button class="option row p-2 m-2" id="op9" >option1</button>
+    
+          <button class="option row p-2 m-2" id="op10" >option2</button>
+    
+          <button class="option row p-2 m-2" id="op11">option3</button>
+    
+          <button class="option row p-2 m-2" id="op12">option4</button>
+        </div>
+
+        <div class="option-container d-none justify-content-center flex-column align-items-center p-3" id="options4">
+          <button class="option row p-2 m-2" id="op13" >option1</button>
+    
+          <button class="option row p-2 m-2" id="op14" >option2</button>
+    
+          <button class="option row p-2 m-2" id="op15">option3</button>
+    
+          <button class="option row p-2 m-2" id="op16">option4</button>
+        </div>
+
+        <div class="option-container d-none justify-content-center flex-column align-items-center p-3" id="options5">
+          <button class="option row p-2 m-2" id="op17" >option1</button>
+    
+          <button class="option row p-2 m-2" id="op18" >option2</button>
+    
+          <button class="option row p-2 m-2" id="op19">option3</button>
+    
+          <button class="option row p-2 m-2" id="op20">option4</button>
+        </div>
+
+        <div class="option-container d-none justify-content-center flex-column align-items-center p-3" id="options6">
+           
+          <label for="Initials">All Done! Your Final score is <p class="TimeOutput"></p>. Please Enter your initials below!</label>
+          <input type="text" id="initials" name="Initials" required minlength="2" maxlength="3">
+            
+        </div>
 
           <p id="generateResponse"></p>
     </div>
+
     <div class="navigation d-flex justify-content-center flex-row align-items-center">
           <button class="next p-2 m-2 bg-dark bg-gradient text-white" id="StartQuiz" onclick="">Start Quiz</button>
           <button class="next d-none p-2 m-2 bg-dark bg-gradient text-white" id="Next1">Next Question</button>
           <button class="next d-none p-2 m-2 bg-dark bg-gradient text-white" id="Next2">Next Question</button>
           <button class="next d-none p-2 m-2 bg-dark bg-gradient text-white" id="Next3">Next Question</button>
           <button class="next d-none p-2 m-2 bg-dark bg-gradient text-white" id="Next4">Next Question</button>
-          <button class="next d-none p-2 m-2 bg-dark bg-gradient text-white" id="Next5">Next Question</button>
-    </div>
+          <button class="next d-none p-2 m-2 bg-dark bg-gradient text-white" id="Next5">Move to Score Submission Page</button>
+          <button class="next d-none p-2 m-2 bg-dark bg-gradient text-white" id="Next6">Submit Score</button>
+             </div>
+
     <script src="./assets/js/script.js"></script>
   </body>
 </html>
