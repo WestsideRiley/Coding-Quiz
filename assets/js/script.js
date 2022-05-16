@@ -3,6 +3,9 @@ var timerEl = document.getElementById('countdown');
 //Countdown function for the timer 
 function countdown() {
   var timeLeft =  120;
+    if (Question1A=== "Incorrect"){
+      timeLeft-=10;
+    }   
     var timeInterval = setInterval(function () {
     if (timeLeft > 1) {
       timerEl.textContent = "Timer: " + timeLeft;
@@ -12,12 +15,13 @@ function countdown() {
       timerEl.textContent = "Timer: " + timeLeft;
       timeLeft--;
     } 
-       else {
+    else {
       timerEl.textContent = '';
       clearInterval(timeInterval);
     }
   }, 1000);
  }
+
 
 //Functions for Switching buttons to move from one question to another. 
 function changeDisplay(){
@@ -109,7 +113,7 @@ function StartQuiz(){
   document.getElementById("op2").addEventListener("click", Answer2); 
   document.getElementById("op3").addEventListener("click", Answer3); 
   document.getElementById("op4").addEventListener("click", Answer4); 
-
+  
   document.getElementById("op1").addEventListener("click", disable);
   document.getElementById("op2").addEventListener("click", disable);
   document.getElementById("op3").addEventListener("click", disable);
@@ -120,7 +124,7 @@ function StartQuiz(){
   document.getElementById("op3").addEventListener("click", changeNext1);
   document.getElementById("op4").addEventListener("click", changeNext1);
 
-  }
+}
 
 //Function for filling in the second question
 function StartQuestion2(){
@@ -146,7 +150,10 @@ function StartQuestion2(){
   document.getElementById("op2").addEventListener("click", changeNext2);
   document.getElementById("op3").addEventListener("click", changeNext2);
   document.getElementById("op4").addEventListener("click", changeNext2);
-}
+
+
+  }
+
 
 //Function for fillin in the third question
 function StartQuestion3(){
@@ -250,10 +257,12 @@ function StartEndPage(){
 //Parameters for defining the Responses of each question
 function Answer1(){
   document.getElementById("generateResponse").innerText="Correct"
+  var Question1A= "Correct";
 }
 
 function Answer2(){
   document.getElementById("generateResponse").innerText="Incorrect"
+  var Question1A="Incorrect";
  }
 
 function Answer3(){
